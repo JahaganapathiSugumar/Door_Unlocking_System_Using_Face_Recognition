@@ -1,11 +1,11 @@
 # Door Unlocking System Using Face Recognition
 
 ## Overview
-This project implements a door unlocking system that uses facial recognition technology for user authentication. The system captures the face of the person in front of the door, matches it against a pre-registered database, and unlocks the door if a match is found. This project combines facial recognition, security, and IoT to create a contactless and secure method for door access.
+This project implements a door unlocking system that uses facial recognition technology for user authentication. The system captures the face of the person in front of the door, matches it against a pre-registered database (stored in folders), and unlocks the door if a match is found. This project combines facial recognition, security, and IoT to create a contactless and secure method for door access.
 
 ## Key Features
 - Uses OpenCV for real-time face detection and recognition.
-- Allows users to register their face data into the system.
+- Allows users to register their face data into the system (stored in folders).
 - Unlocks the door upon successful face recognition.
 - Provides a secure and contactless method of authentication.
 - Can be integrated with an IoT-based door lock system for real-time access control.
@@ -13,13 +13,13 @@ This project implements a door unlocking system that uses facial recognition tec
 ## Technologies Used
 - **Face Recognition**: OpenCV, Dlib
 - **Backend**: Python
-- **Database**: SQLite (for storing registered users' face data)
+- **Data Storage**: User face data stored in folders (each user in a separate folder)
 - **IoT Integration**: Optional (to control a physical door lock)
 
 ## How to Use
 1. Clone this repository.
-2. Install the required dependencies, such as OpenCV, Dlib, and SQLite.
-3. Train the system by registering users' faces. Capture a series of face images and store them in the database.
+2. Install the required dependencies, such as OpenCV and Dlib.
+3. Train the system by registering users' faces. Create folders for each user and store images of their faces inside these folders.
 4. Run the face recognition script to detect and recognize faces in real-time.
 5. Upon successful recognition, the system will trigger an action to unlock the door (can be integrated with a physical IoT lock).
 
@@ -27,7 +27,7 @@ This project implements a door unlocking system that uses facial recognition tec
 
 1. Install Python and necessary libraries:
    ```bash
-   pip install opencv-python dlib numpy sqlite3
+   pip install opencv-python dlib numpy
    ```
 
 2. Clone the repository:
@@ -35,7 +35,7 @@ This project implements a door unlocking system that uses facial recognition tec
    https://github.com/JahaganapathiSugumar/Door_Unlocking_System_Using_Face_Recognition.git
    ```
 
-3. Set up the database by running the registration script to capture face images and store them in the database.
+3. Set up the folders by creating a folder for each user and storing face images in those folders.
 
 4. Run the face recognition script to test the system.
 
